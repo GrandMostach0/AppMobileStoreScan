@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainCompra"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layoutDirection="ltr"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_category"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/img_producto_compra"
+            android:layout_width="120dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNameProducto_compra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Nombre Producto"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtCodigoProducto_compra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Codigo Producto"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtPrecioProducto_compra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Precio Unitario"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_EliminarProducto"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="64dp"
+                android:background="@drawable/border_txtsolid"
+                android:backgroundTint="@android:color/holo_red_dark"
+                app:srcCompat="@drawable/ic_clear"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

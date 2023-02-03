@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AgregarProducto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_productoAdd"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnagregarImagenAdd"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_redondeados_texto"
+                android:text="Capturar Imagen"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEliminarmagenAdd"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_redondeados_texto"
+                android:text="ELIMINAR IMAGEN"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtNombreProductoAdd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:hint="Nombre Producto"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCategoriaProductoAdd"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Categoria del producto"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerCategoriaAdd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/border_botones" />
+
+        <EditText
+            android:id="@+id/txtCantidadProductoAdd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:hint="Cantidad de producto a agregar"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtPrecioProductoAdd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:autofillHints=""
+            android:gravity="center"
+            android:hint="$0"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtDescripcionProductoAdd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:hint="Descipcion Producto"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtCodigoBarraAdd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:hint="Codigo de Barra"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAgregarCodigoBarraAdd"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/border_redondeados_texto"
+            android:text="Scanear Codigo Barra"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAgregarAdd"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/border_redondeados_texto"
+            android:text="Agregar"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancelarAdd"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/border_redondeados_texto"
+            android:text="Cancelar"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

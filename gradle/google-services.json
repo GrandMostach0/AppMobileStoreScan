@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "938659195817",
+    "project_id": "scannerstoreofical",
+    "storage_bucket": "scannerstoreofical.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938659195817:android:6431a8c58d19a04372b2b8",
+        "android_client_info": {
+          "package_name": "com.vic.scannerstoreoficial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938659195817-o4e6861befips3mrfev256fjhbe2lsbk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vic.scannerstoreoficial",
+            "certificate_hash": "edad43118cf2f1eedaa4809b8ce8a990e1697e71"
+          }
+        },
+        {
+          "client_id": "938659195817-tfon3dmu221srg8csvhoa4fj91mao1a7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc4Dv7yh1QaASC08OtQmJvyU_yTpk3dcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938659195817-tfon3dmu221srg8csvhoa4fj91mao1a7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
